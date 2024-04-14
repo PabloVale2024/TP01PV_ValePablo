@@ -32,6 +32,7 @@ public class Empleado {
 		
 	}
 	public float aumentarSalario(float salario) {
+		System.out.println("aumentando salario....");
 		salario = salario + AUMENTO;
 		
 		return salario;
