@@ -15,6 +15,21 @@ public class Pizza {
 	public Pizza() {
 		// TODO Auto-generated constructor stub
 	}
+	
+	/**
+	 * @param diametro
+	 * @param precio
+	 * @param area
+	 * @param ingredentesEspeciales
+	 */
+	public Pizza(double diametro, double precio, double area, boolean ingredentesEspeciales) {
+		super();
+		this.diametro = diametro;
+		this.precio = precio;
+		this.area = area;
+		this.ingredentesEspeciales = ingredentesEspeciales;
+	}
+
 	public double getDiametro() {
 		return diametro;
 	}
@@ -42,11 +57,45 @@ public class Pizza {
 	public double calcularPrecio() {
 		double precio = 0;
 		
-		if (diametro == 20 && !ingredentesEspeciales) {
+		if (diametro == 20 && ingredentesEspeciales) {
 			precio = 4500 + ESEPCIAL20;
-			
+		}else {
+			if (diametro == 20 && !ingredentesEspeciales) {
+				precio= 4500;
+			}else {
+				if (diametro == 30 && !ingredentesEspeciales) {
+					precio= 4800;
+					
+				}else {
+					if (diametro == 30 && ingredentesEspeciales) {
+						precio= 4800 + ESEPCIAL30;
+					}else {
+						if (diametro == 40 && !ingredentesEspeciales) {
+							precio= 5500;
+						}else {
+							if (diametro == 400 && ingredentesEspeciales) {
+								precio= 5500 + ESEPCIAL40;
+							}
+						}
+					}
+				}
+				
+			}
 		}
+		return precio;
 		
+	}
+	public double calcularArea(float diametro) {
+		double pi =3.14f;
+		double area;
+		return  area= (double) (pi * Math.pow(diametro/2, 2));
+	}
+	public void mostrarDatos() {
+		System.out.println("##Pizza 1###");
+		System.out.println("Diametro = "+this.diametro);
+		System.out.println("Ingredientes  = "+this.ingredentesEspeciales);
+		System.out.println("Precio = "+this.precio);
+		System.out.println("Diametro = "+this.area);
 		
 	}
 }
