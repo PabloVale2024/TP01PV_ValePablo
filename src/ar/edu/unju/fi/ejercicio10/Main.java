@@ -20,14 +20,12 @@ public class Main {
 		String ingrediente=escaneo.next();
 		boolean ingredenteEspecial;
 		if (ingrediente == "si") {
-			System.out.println(ingrediente);
+			
 			ingredenteEspecial= true;
 		}else {
 			ingredenteEspecial = false;
 		}
 	
-		//System.out.println("ingrese el Precio");
-		//double precio = escaneo.nextDouble();
 		Pizza pizza = new Pizza(diametro, ingredenteEspecial);
 		double area = pizza.calcularArea(diametro);
 		pizza.setArea(area);
