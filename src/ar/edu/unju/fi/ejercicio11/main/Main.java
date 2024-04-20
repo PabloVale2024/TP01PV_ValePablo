@@ -11,7 +11,7 @@ public class Main {
 			
 			numero=numero + numeroRestar;
 			
-			System.out.print(numero+" ");
+			System.out.print(numero+"  ");
 				numeroRestar=(numeroRestar-i);
 		}
 
