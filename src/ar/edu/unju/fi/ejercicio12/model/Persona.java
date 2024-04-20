@@ -7,6 +7,41 @@ public class Persona {
 	private String nombrePersona;
 	Calendar fechaNacimiento;
 
+	
+public String getNombrePersona() {
+		return nombrePersona;
+	}
+
+	public void setNombrePersona(String nombrePersona) {
+		this.nombrePersona = nombrePersona;
+	}
+
+	public Calendar getFechaNacimiento() {
+		return fechaNacimiento;
+	}
+
+	public void setFechaNacimiento(Calendar fechaNacimiento) {
+		this.fechaNacimiento = fechaNacimiento;
+	}
+
+/**
+	 * 
+	 */
+	public Persona() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+/**
+	 * @param nombrePersona
+	 * @param fechaNacimiento
+	 */
+	public Persona(String nombrePersona, Calendar fechaNacimiento) {
+		super();
+		this.nombrePersona = nombrePersona;
+		this.fechaNacimiento = fechaNacimiento;
+	}
+	
 public int calcularEdad(int dia, int mes, int anio) {
 	Calendar hoy= Calendar.getInstance();
 	int anioActual=hoy.get(Calendar.YEAR);
