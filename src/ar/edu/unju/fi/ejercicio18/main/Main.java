@@ -83,7 +83,7 @@ public class Main {
 		            		//System.out.println("la cantidad de jugadores de nacionalidad " + nacionalidad + "es " + cantidadN);
 		            		break;
 	                    case 9:
-	                        System.out.println("¡Hasta luego!");
+	                        System.out.println("¡Hasta pronto!");
 	                        break;
 	                }
 	            } catch (InputMismatchException e) {
