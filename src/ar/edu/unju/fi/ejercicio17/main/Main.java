@@ -5,6 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.Date;
 import java.util.InputMismatchException;
 import java.util.List;
@@ -64,7 +65,10 @@ public class Main {
 		            		}
 		                    break;
 		                case 3:
-		                	Collections.sort(jugadores);
+		                	Comparator <Jugador> comp= Comparator.comparing(Jugador::getApellido);
+		                	//comparador.s
+		                	//jugadores.sort();
+		                	Collections.sort(jugadores,comp);
 
 		                    for (Jugador i : jugadores) {
 		                      System.out.println(i);
@@ -102,7 +106,7 @@ public class Main {
 		                	System.out.println("la cantidad de jugadores es " + jugadores.size());
 		                    break;
 		                case 7:
-		                	int cantidadN;
+		                	int cantidadN=0;
 		                	System.out.println("ingrese su nacionalidad");
 		            		nacionalidad = escaneo.next();
 		            		for (Jugador jug : jugadores) {
