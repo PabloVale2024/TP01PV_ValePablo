@@ -25,6 +25,7 @@ public class Main {
 	}else {
 		System.out.println("Numero fuera de Rango");
 	}
+		  escaneo.close();
 	}
 
 }

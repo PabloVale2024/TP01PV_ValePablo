@@ -1,12 +1,10 @@
 package ar.edu.unju.fi.ejercicio12.main;
 
-import java.time.LocalDate;
+
 import java.util.Calendar;
-import java.util.GregorianCalendar;
+
 import java.util.Scanner;
 import ar.edu.unju.fi.ejercicio12.model.Persona;
-
-import ar.edu.unju.fi.ejercicio8.model.CalculadoraEspecial;
 
 public class Main {
 
@@ -33,7 +31,7 @@ public class Main {
 		System.out.println("Edad: "+ persona1.calcularEdad(dia, mes, anio));
 		System.out.println("Signo del Zodiaco: "+ persona1.calcualrSigno(dia, mes));
 		System.out.println("Estacion de Año en que Nacio: "+persona1.estacionAnio(mes, dia));
-		
+		escaneo.close();
 	}
 
 }

@@ -25,5 +25,6 @@ public class Main {
 		}
 		System.out.println("suma de todos los numeros: "+ suma);
 	}
+		  escaneo.close();
 	}
 }

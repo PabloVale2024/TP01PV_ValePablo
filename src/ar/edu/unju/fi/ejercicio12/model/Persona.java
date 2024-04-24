@@ -1,7 +1,7 @@
 package ar.edu.unju.fi.ejercicio12.model;
 
 import java.util.Calendar;
-import java.util.Date;
+
 
 public class Persona {
 	private String nombrePersona;
@@ -54,8 +54,6 @@ public int calcularEdad(int dia, int mes, int anio) {
 }
 
 public String calcualrSigno(int dia, int mes) {
-//	Calendar fechaIngresada=  Calendar.getInstance();
-	//fechaIngresada.set(anio, mes, dia);
 	 if (mes == 1) {
          if (dia >= 21) {
              //acuario

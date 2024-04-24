@@ -18,7 +18,7 @@ public class Main {
 			System.out.println("numero en Array: "+ numeros[i]);
 		}
 		// TODO Auto-generated method stub
-
+		  escaneo.close();
 	}
 
 }
